@@ -58,9 +58,6 @@
 > ✅ Esta sección se **auto-genera** desde `/catalog/items/**`. No la edites aquí — usa [CONTRIBUTING](../CONTRIBUTING.md).
 
 <!-- BEGIN:CATALOG -->
-### Marcos cognitivos
-- **Noesis** — Bucles cognitivos con artefactos de estado/eventos.
-
 ### Frameworks
 - **LangGraph** — Grafo tipado para flujos de agentes; persistencia y HIL.
 
@@ -86,7 +83,10 @@
 - **Tree of Thought (ToT)** — Búsqueda estructurada de “pensamientos”.
 
 ### Sistemas productivos
-- **AutoEval Pipeline** — Plantilla de CI para evaluación.
+- [**AutoEval Pipeline**](autoeval-pipeline.md) — Plantilla de CI para evaluación.
+
+### Marcos cognitivos
+- **Noesis** — Bucles cognitivos con artefactos de estado/eventos.
 <!-- END:CATALOG -->
 
 ---
