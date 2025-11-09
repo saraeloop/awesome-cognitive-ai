@@ -128,8 +128,6 @@
 - **Hawkins — _On Intelligence_** — predicción jerárquica antes de que fuera mainstream.  
 - **Russell — _Human Compatible_** — alineación como control cognitivo.
 
-*(La lista completa con enlaces está en la sección de Libros.)*
-
 ---
 
 ## 🛠️ Manos a la obra
