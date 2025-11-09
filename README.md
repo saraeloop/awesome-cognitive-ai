@@ -53,38 +53,36 @@
 
 ## 🧺 Curated catalog
 
-> ✅ Auto-generated from `/catalog/items/**` via CI. Don’t edit here — use [CONTRIBUTING](CONTRIBUTING.md).
-
 <!-- BEGIN:CATALOG -->
 ### Frameworks
-- **LangGraph** — Typed graph for agent flows; supports persistence, human-in-the-loop.
+- [**LangGraph**](https://github.com/langchain-ai/langgraph) — Typed graph for agent flows; supports persistence, human-in-the-loop.
 
 ### Memory
-- **Mem0** — Simple personalizable memory layer with connectors.
+- [**Mem0**](https://github.com/mem0ai/mem0) — Simple personalizable memory layer with connectors.
 
 ### Evaluation
-- **Ragas** — RAG-focused metrics + reports.
+- [**Ragas**](https://github.com/explodinggradients/ragas) — RAG-focused metrics + reports.
 
 ### Observability
-- **Langfuse** — Traces, spans, prompts, eval, dashboards.
+- [**Langfuse**](https://github.com/langfuse/langfuse) — Traces, spans, prompts, eval, dashboards.
 
 ### Guardrails & Safety
-- **Guardrails AI** — Validated outputs, schemas, policies.
+- [**Guardrails AI**](https://github.com/guardrails-ai/guardrails) — Validated outputs, schemas, policies.
 
 ### MCP
-- **MCP Spec** — Protocol for tools/servers over stdio/HTTP.
+- [**MCP Spec**](https://github.com/modelcontextprotocol/specification) — Protocol for tools/servers over stdio/HTTP.
 
 ### Datasets
-- **HotpotQA** — Multi-hop QA dataset for reasoning.
+- [**HotpotQA**](https://hotpotqa.github.io/) — Multi-hop QA dataset for reasoning.
 
 ### Papers
-- **Tree of Thought (ToT)** — Structured problem-solving via search over thoughts.
+- [**Tree of Thought (ToT)**](https://arxiv.org/abs/2305.10601) — Structured problem-solving via search over thoughts.
 
 ### Production Systems
-- **AutoEval Pipeline** — Example CI evaluation harness template.
+- [**AutoEval Pipeline**](docs/autoeval-pipeline.md) — Example CI evaluation harness template.
 
 ### Cognition & Loops
-- **Noēsis** — Cognitive loop + artifacts (state/events/memory/insight). _Maintainer-Contributed; Disclosure in entry._
+- [**Noēsis**](https://github.com/saraeloop/noesis) — Cognitive loop + artifacts (state/events/memory/insight). _Maintainer-Contributed; Disclosure in entry._
 <!-- END:CATALOG -->
 
 ---
