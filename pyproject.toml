@@ -1,0 +1,24 @@
+[project]
+name = "awesome-cognitive-ai"
+version = "0.1.0"
+description = "A curated, fact-checked catalog of frameworks, patterns, and systems for cognitive AI — loops, reflection, memory, observability, and evaluation."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "CC-BY-4.0" }
+authors = [
+  { name = "Sara Loera", email = "saraeloop@gmail.com" }
+]
+keywords = [
+  "awesome-list",
+  "cognitive-ai",
+  "agentic-ai",
+  "llm",
+  "memory",
+  "rag",
+  "observability",
+  "reflection",
+]
+homepage = "https://github.com/saraeloop/awesome-cognitive-ai"
+
+# This section ensures it's treated as a docs project, not a pip-installable package
+dependencies = []
