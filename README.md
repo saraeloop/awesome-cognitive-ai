@@ -1,50 +1,61 @@
+[English](README.md) | [Español](docs/README.es.md)
+
 # 🌟 Awesome Cognitive-AI
 
-> A curated, **fact-checked** catalog of frameworks, patterns, papers, datasets, tools, and systems for building **inspectable cognitive loops** (plan → act → observe → reflect → learn), agentic workflows, RAG, memory, evaluation, and observability.
+> Build agents that *think out loud*: **plan → act → observe → reflect → learn**.  
+> A curated, fact-checked map of frameworks, patterns, papers, datasets, and tools for **inspectable cognition**.
 
-[English] · [Español] 
+<p align="center">
+  <a href="https://awesome.re">
+    <img src="https://awesome.re/badge.svg" alt="Awesome">
+  </a>
+</p>
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-![CI](https://img.shields.io/github/actions/workflow/status/OWNER/REPO/ci.yml?label=CI)
-![Last Updated](https://img.shields.io/github/last-commit/OWNER/REPO)
-
----
-
-## Why this list?
-
-- **Cognition-first**: Goes beyond “agents” to highlight **explicit cognitive structure** (state, loops, memory, reflection, insight, evaluation).
-- **Quality gate**: Every entry includes **license, maintenance status, artifact types, and evaluation signals**.
-- **Inspectability**: Preference for projects that produce **traceable artifacts** (e.g., events.jsonl, memory facts, eval reports).
-
-> ⚖️ **Disclosure policy**: When a maintainer contributes their own project, we mark it **Maintainer-Contributed** so the list stays trustworthy.
+**Like what you find?** Drop a 👍 · ⭐ · 👏 on the repos you use — it helps the maintainers (and future you).
 
 ---
 
-## Taxonomy
-
-- **Cognition & Loops** — cognitive frameworks, loop orchestration (plan/act/reflect/learn)
-- **Frameworks** — agent & workflow frameworks (LangGraph, CrewAI, OpenAI Agents SDK, etc.)
-- **Memory** — short/long-term memory, vector stores, entity memory, episodic memory
-- **Evaluation** — LLM eval, RAG eval, safety eval, trace-based eval
-- **Observability** — tracing, analytics, debug UIs, telemetry
-- **Guardrails & Safety** — policy, red-teaming tools, constrained decoding, classifiers
-- **MCP** — Model Context Protocol servers/tools/registries
-- **RAG** — pipelines, hybrid search, routing, distillation
-- **Datasets** — reasoning, QA, tool-use, safety
-- **Papers** — seminal cognition/agent/RAG/loop papers
-- **Production Systems** — end-to-end blueprints & case studies
+## ✨ Why this list?
+- **Cognition-first**, not hype-first — explicit loops, memory, telemetry, guardrails.
+- **Metadata-rich** — license, maintenance, and eval signals for sane adoption.
+- **Traceable by design** — prefer projects that emit **events/traces/eval artifacts**.
+- **Clear disclosure** — maintainer entries are marked _Maintainer-Contributed_.
 
 ---
 
-## Curated catalog
+## 🕹️ How to use this repo
+1. **Pick a lane** in the taxonomy (frameworks, memory, eval, observability, …).
+2. **Skim the metadata** for each entry (license ✔, maintenance 🔧, artifacts 📄).
+3. **Ship trace-first** — choose tools that expose state/events and wire up observability.
+4. **Contribute back** — see [CONTRIBUTING.md](CONTRIBUTING.md) for the JSON schema + checklist.
 
-> ✅ This section is **auto-generated** from `/catalog/items/**` via CI.  
-> Do not edit directly — see [CONTRIBUTING](CONTRIBUTING.md).
+> Pro tip: Treat your agent like a service. Logs, metrics, and a postmortem folder save lives 🧯.
+
+---
+
+## 🧭 Taxonomy at a glance
+
+| Category | Focus |
+| --- | --- |
+| **Cognition & Loops** | Make planning, acting, reflection, and learning explicit. |
+| **Frameworks** | LangGraph, CrewAI, OpenAI Agents SDK, and friends. |
+| **Memory** | Short/long-term memory, entities, vector/index backends. |
+| **Evaluation** | RAG, safety, reasoning, regression, HIL review. |
+| **Observability** | Telemetry, tracing, prompt diffing, replay/debug tooling. |
+| **Guardrails & Safety** | Policies, constrained decoding, classifiers, red teaming. |
+| **MCP** | Model Context Protocol servers, registries, tooling. |
+| **RAG** | Retrieval, hybrid search, routing, distillation, monitoring. |
+| **Datasets** | Reasoning, tool-use, safety, multi-hop QA. |
+| **Papers** | Cognition, loops, reflection, RAG, agent eval. |
+| **Production Systems** | Blueprints, ref-archs, and case studies. |
+
+---
+
+## 🧺 Curated catalog
+
+> ✅ Auto-generated from `/catalog/items/**` via CI. Don’t edit here — use [CONTRIBUTING](CONTRIBUTING.md).
 
 <!-- BEGIN:CATALOG -->
-### Cognition & Loops
-- **Noēsis** — Cognitive loop + artifacts (state/events/memory/insight). _Maintainer-Contributed; Disclosure in entry._
-
 ### Frameworks
 - **LangGraph** — Typed graph for agent flows; supports persistence, human-in-the-loop.
 
@@ -71,104 +82,71 @@
 
 ### Production Systems
 - **AutoEval Pipeline** — Example CI evaluation harness template.
+
+### Cognition & Loops
+- **Noēsis** — Cognitive loop + artifacts (state/events/memory/insight). _Maintainer-Contributed; Disclosure in entry._
 <!-- END:CATALOG -->
 
 ---
 
-# 🧠 Awesome Cognitive AI
+## 🗺️ Field guide (quick picks)
 
-A curated collection of **frameworks, tools, and research** building the next generation of cognitive architectures, agent reasoning loops, and observable AI systems.  
-This repository highlights projects exploring **planning, reflection, learning, and memory** — the building blocks of machine cognition.
+### Core cognitive loop frameworks
+| Project | Highlights |
+| --- | --- |
+| [**LangGraph**](https://github.com/langchain-ai/langgraph) | Typed orchestration, checkpoints, human approval hooks. |
+| [**CrewAI**](https://github.com/joaomdmoura/crewai) | Role agents, shared memory, tools. |
+| [**MetaGPT**](https://github.com/geekan/MetaGPT) | Multi-agent “virtual company” with planning/review. |
+| [**OpenDevin**](https://github.com/OpenDevin/OpenDevin) | Autonomous SE agent with inspectable reasoning. |
+| [**Noēsis**](https://github.com/saraeloop/noesis) | Emits state/events/insight artifacts for replay & eval. |
 
----
+### Observability, telemetry & QA
+- [**Langfuse**](https://github.com/langfuse/langfuse) · [**LangSmith**](https://smith.langchain.com/) · [**Helicone**](https://github.com/Helicone/helicone) · [**Braintrust**](https://github.com/braintrustdata/braintrust) · [**HoneyHive**](https://www.honeyhive.ai/)
 
-## 🤔 Why Awesome Cognitive AI?
+### 🧠 Memory & knowledge substrates
+- [**Mem0**](https://github.com/mem0ai/mem0) · [**LlamaIndex**](https://github.com/run-llama/llama_index) · [**Pinecone**](https://www.pinecone.io/) · [**Weaviate**](https://weaviate.io/) · [**Chroma**](https://github.com/chroma-core/chroma) · [**Qdrant**](https://github.com/qdrant/qdrant)
 
-💡 **Understand** how modern AI systems reason, plan, and learn — from open-ended agents to reflective LLM loops.  
-🧩 **Explore** cognitive frameworks that make reasoning observable and measurable instead of black-box prompting.  
-🔥 **Discover** production-grade open-source tools for **agentic reasoning, meta-learning, and cognitive observability.**  
-🎓 **Learn** from frameworks inspired by ReAct, Reflexion, Tree-of-Thoughts, Voyager, Meta-CoT, and Claude Code.  
+### Evaluation & measurement
+- [**Ragas**](https://github.com/explodinggradients/ragas) · [**TruLens**](https://github.com/truera/trulens) · [**OpenAI Evals**](https://github.com/openai/evals) · [**Giskard**](https://github.com/Giskard-AI/giskard) · [**DeepEval**](https://github.com/confident-ai/deepeval)
 
----
+### Multi-agent coordination
+- [**Swarm**](https://github.com/openai/swarm) · [**CAMEL**](https://github.com/camel-ai/camel) · [**SuperAGI**](https://github.com/TransformerOptimus/SuperAGI) · [**ChatDev**](https://github.com/OpenBMB/ChatDev) · [**AutoGen**](https://github.com/microsoft/autogen)
 
-## 📂 Featured Cognitive Frameworks
-
-### 🧠 Core Cognitive Loops
-| Project | Description |
-|----------|--------------|
-| [**Noēsis**](https://github.com/saraeloop/noesis) | Cognitive loop framework that turns reasoning into observable artifacts (state, events, insight, learn). |
-| [**LangGraph**](https://github.com/langchain-ai/langgraph) | Graph-based agent orchestration and memory for reasoning workflows. |
-| [**CrewAI**](https://github.com/joaomdmoura/crewai) | Multi-agent orchestration system for collaborative cognitive processes. |
-| [**MetaGPT**](https://github.com/geekan/MetaGPT) | Multi-agent “software company” simulation with shared planning and reasoning memory. |
-| [**OpenDevin**](https://github.com/OpenDevin/OpenDevin) | Open-source autonomous software engineering agent with task reasoning. |
-
----
-
-### 🧭 Reasoning, Planning & Reflection
-- 🧩 [**ReAct**](https://github.com/ysymyth/ReAct) — *Reason + Act* prompting framework for interpretable thinking loops.  
-- 🪞 [**Reflexion**](https://github.com/noahshinn/reflexion) — Agents that self-evaluate and improve through reflection.  
-- 🌲 [**Tree-of-Thoughts**](https://github.com/kyegomez/tree-of-thoughts) — Structured reasoning via multi-path search.  
-- 🚀 [**Voyager**](https://github.com/MineDojo/Voyager) — Continual-learning embodied agent using self-improving cognition.  
-- 🧬 [**Meta-CoT**](https://github.com/zjunlp/Meta-CoT) — Meta-learning framework for adaptive reasoning strategies.  
+### Starter kits & tutorials
+- [**OpenAI Agents SDK Quickstart**](https://github.com/openai/openai-agents-quickstart) · [**Google ADK**](https://github.com/google-deepmind/agent-framework) · [**Voyager**](https://github.com/MineDojo/Voyager) · [**Reflexion**](https://github.com/noahshinn/reflexion) · [**LangGraph examples**](https://github.com/langchain-ai/langgraph/tree/main/examples)
 
 ---
 
-### 🤝 Multi-Agent Cognition
-- ♾️ [**Swarm**](https://github.com/openai/swarm) — Composable multi-agent collaboration framework by OpenAI.  
-- 🧑‍💼 [**CAMEL**](https://github.com/camel-ai/camel) — Role-based collaborative AI agents for goal-driven tasks.  
-- 🏗️ [**SuperAGI**](https://github.com/TransformerOptimus/SuperAGI) — Autonomous agent platform for production environments.  
-- 📰 [**ChatDev**](https://github.com/OpenBMB/ChatDev) — Multi-agent simulation of a software company.  
+## 📚 Books & Foundational Works (fun edition)
+- **Miller, Galanter, Pribram — _Plans and the Structure of Behavior_ (1960)** — the OG **TOTE loop**.  
+- **Newell & Simon — _Human Problem Solving_ (1972)** — why planning matters.  
+- **Minsky — _Society of Mind_ (1986)** — tiny agents, big brain.  
+- **Anderson — _Cognitive Psychology…_ (ACT-R)** — memory that actually remembers.  
+- **Hawkins — _On Intelligence_** — predictive coding before it was cool.  
+- **Russell — _Human Compatible_** — alignment as cognitive control.
+
+(See full list with links in the Books section below.)
 
 ---
 
-### 🧩 Observability & Cognitive Metrics
-- 🧠 [**Noēsis Viewer CLI**](https://github.com/saraeloop/noesis) — Inspect reasoning traces, plan adherence, veto counts, and insight metrics.  
-- 📊 [**LangSmith**](https://smith.langchain.com/) — Trace visualization and evaluation for LangChain agents.  
-- 🔎 [**Helicone**](https://github.com/Helicone/helicone) — Telemetry and logging for LLM reasoning calls.  
-- 🧪 [**Braintrust**](https://github.com/braintrustdata/braintrust) — Evaluation and version control for agent reasoning.  
+## 🛠️ Getting hands-on
+1. Fork/clone and point CI at your `/catalog/items` JSON.  
+2. Use entries as **sourcing** for evals and due diligence.  
+3. Ship with tracing & evals **before** the demo video.  
+4. Share repro notes and post-incident writeups via PRs 📨.
 
 ---
 
-### 📚 Key Research Papers
-- **ReAct (Yao et al., 2022)** – *Synergizing Reasoning and Acting in Language Models*  
-- **Reflexion (Shinn et al., 2023)** – *Language Agents that Learn to Self-Improve via Reflections*  
-- **Tree-of-Thoughts (Yao et al., 2023)** – *Deliberate Problem Solving with LLMs*  
-- **Voyager (Wang et al., 2023)** – *An Open-Ended Embodied Agent with LLMs*  
-- **Meta-CoT (Zhang et al., 2024)** – *Learning to Learn Reasoning Strategies*  
-- **Claude Code / Deep Research (Anthropic, 2024)** – *Structured multi-phase cognitive workflows.*
+## 🤝 Contributing
+- Open an issue to pitch ideas.  
+- Add `catalog/items/<category>/<project>.json` per the schema.  
+- Run the format/regenerate scripts (see **CONTRIBUTING.md**).  
+- Disclose affiliations; tag your stuff as _Maintainer-Contributed_.  
+- Keep blurbs ≤ 140 chars with authoritative links.
 
 ---
 
-## 🧬 Cognitive Architectures (Classics)
-| Name | Description |
-|------|--------------|
-| 🧱 **Soar** | Symbolic cognitive architecture for goal-directed reasoning. |
-| 🧩 **ACT-R** | Psychology-inspired model for memory and decision-making. |
-| 🧠 **CLARION** | Hybrid connectionist/symbolic architecture unifying implicit and explicit cognition. |
-
----
-
-## ⚙️ Related Topics
-- Cognitive Loops & Agentic Reasoning  
-- Reflective Learning Systems  
-- Governance & Veto Metrics  
-- Multi-Agent Collaboration  
-- Memory Architectures (FAISS, SQLite, HNSW)  
-- Meta-Learning & Self-Improvement  
-- Cognitive Trace Visualization  
-
----
-
-## 🌟 How to Contribute
-Pull requests welcome!  
-Add new frameworks, papers, or demos following the format below:
-
-```markdown
-- **[ProjectName](link)** — One-line description of what it contributes to cognitive AI.
-
-## License
-
-- List content: **CC BY 4.0**
-- Repo code (scripts/): **MIT**
-
-> Please attribute the list in derivatives. See [LICENSE](LICENSE).
+## 📜 License
+- List content: **CC BY 4.0**  
+- Scripts/tooling: **MIT**  
+Please attribute when you remix or embed sections. See [LICENSE](LICENSE).
